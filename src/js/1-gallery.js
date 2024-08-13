@@ -99,7 +99,10 @@ imgGallery.addEventListener('click', onCardClick);
 
 document.addEventListener('DOMContentLoaded', function () {
     var lightbox = new SimpleLightbox('.gallery a', {
-        captionDelay: 250,
+        captions: true, 
+    captionDelay: 250, 
+    captionsData: 'alt', 
+    captionPosition: 'bottom',
     });
     lightbox.on('show.simplelightbox');
 });
