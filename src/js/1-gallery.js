@@ -98,5 +98,8 @@ const onCardClick = event => {
 imgGallery.addEventListener('click', onCardClick);
 
 document.addEventListener('DOMContentLoaded', function () {
-    var lightbox = $('.js-gallery').simpleLightbox();
+    var lightbox = new SimpleLightbox('.gallery a', {
+        captionDelay: 250,
+    });
+    lightbox.on('show.simplelightbox');
 });
