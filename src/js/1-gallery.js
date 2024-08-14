@@ -95,7 +95,6 @@ const onCardClick = event => {
     event.preventDefault();
 };
 
-imgGallery.addEventListener('click', onCardClick);
 
 document.addEventListener('DOMContentLoaded', function () {
     var lightbox = new SimpleLightbox('.gallery a', {
